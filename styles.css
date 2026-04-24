@@ -160,6 +160,7 @@ h1::before {
 
 
 /* MEDIA QUERIES (MEDIUM) */ 
+@media (min-width: 768px) {
 
     #results {
         grid-template-columns: 1fr 1fr;
@@ -175,5 +176,10 @@ h1::before {
         width: 50%;
     }
 
-
+}
 /* MEDIA QUERIES (LARGE) */
+@media (min-width: 1024px) {
+    nav ul {
+        justify-content: flex-end;
+    }
+}
