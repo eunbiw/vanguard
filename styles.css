@@ -70,6 +70,7 @@ body {
     background: var(--black);
     color: var(--white);
     line-height: 1.6;
+    min-width: 400px;
 
 }
 
@@ -101,6 +102,17 @@ nav ul {
     padding: 1rem;
     overflow: hidden;
 }
+#hero h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+#hero p {
+    max-width: 600px;
+    margin: 20px auto;
+    opacity: 0.9;
+}
+
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
 h1 {
