@@ -67,6 +67,9 @@ table {
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
 body {
     font-family: var(--font);
+    background: var(--black);
+    color: var(--white);
+    line-height: 1.6;
 
 }
 
@@ -101,7 +104,7 @@ nav ul {
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
 h1 {
-    position: relative;
+    position: absolute;
 }
 h1::before {
     content: "";
