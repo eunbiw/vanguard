@@ -108,13 +108,14 @@ nav ul {
     overflow: hidden;
 }
 #hero h2 {
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 #hero p {
     max-width: 600px;
     margin: 20px auto;
     opacity: 0.9;
+
 }
 #hero .container {
     background: rgba(0,0,0,0.7);
@@ -122,7 +123,7 @@ nav ul {
     border-radius: 10px;
 }
 section {
-    padding: 3rem 0;
+    padding: 5rem 0;
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
