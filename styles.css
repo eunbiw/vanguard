@@ -189,6 +189,8 @@ h1::before {
 #contact {
     background: var(--black);
     color: var(--white);
+    text-align: center;
+    padding: 5rem 0;
 }
 
 #contact .container {
@@ -197,52 +199,48 @@ h1::before {
 }
 form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-        "name company message"
-        "email industry submit";
-
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    width: 100%;
+
     max-width: 900px;
+    margin: 2rem auto;
 }
 
 input, textarea {
-    width: 100%;
-    padding: 12px;
+    background: white;
     border: 2px solid var(--blue);
     border-radius: 0;
-    background: var(--white);
-    
+    padding: 12px;
+    color: black;
+    width: 100%;
 }
-input[type="text"]:nth-of-type(1) {
-    grid-area: name;
-}
-
-input[type="text"]:nth-of-type(2) {
-    grid-area: company;
-}
-input[type="email"] {
-    grid-area: email;
+input[name="fullname"] {
+    grid-column: 1;
 }
 
-input[type="text"]:nth-of-type(3) {
-    grid-area: industry;
+input[name="company"] {
+    grid-column: 2;
 }
 
-textarea {
-    grid-area: message;
+textarea[name="help"] {
+    grid-column: 3;
     min-height: 120px;
 }
 
+input[name="email"] {
+    grid-column: 1;
+}
+
+input[name="industry"] {
+    grid-column: 2;
+}
 
 button {
-    grid-area: submit;
+    grid-column: 3;
     background: var(--blue);
-    color: var(--white);
+    color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     padding: 12px;
     cursor: pointer;
 }
