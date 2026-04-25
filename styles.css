@@ -248,46 +248,66 @@ thead {
 #contact form {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
     gap: 1rem;
     max-width: 900px;
     margin: 2rem auto;
 }
-#contact form input,
-#contact form textarea {
-    width: 100%;
+
+#contact form * {
     box-sizing: border-box;
-    padding: 12px;
+}
+
+#contact label {
+    font-size: 0.7rem;
+    margin-bottom: 4px;
+    display: block;
+    opacity: 0.8;
+    text-align: left;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 14px 12px;
     border: 2px solid var(--blue);
     background: white;
     color: black;
 }
 
-label {
-    display: block;
-    font-size: 0.85rem;
-    margin-bottom: 4px;
-    text-align: left;
-    color: var(--white);
+#contact label:nth-of-type(1),
+#contact input[name="fullname"] {
+    grid-column: 1;
+    grid-row: 1;
 }
-form label {
-    grid-column: auto;
-}
-#contact form label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 0.85rem;
-    color: var(--white);
-}
-input[name="fullname"] { grid-column: 1; grid-row: 1; }
-input[name="company"]  { grid-column: 2; grid-row: 1; }
 
-input[name="email"]    { grid-column: 1; grid-row: 2; }
-input[name="industry"] { grid-column: 2; grid-row: 2; }
-textarea[name="help"]  { grid-column: 1; grid-row: 3; }
-button                  { grid-column: 2; grid-row: 3; }
+#contact label:nth-of-type(2),
+#contact input[name="company"] {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#contact label:nth-of-type(3),
+#contact textarea[name="help"] {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#contact label:nth-of-type(4),
+#contact input[name="email"] {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#contact label:nth-of-type(5),
+#contact input[name="industry"] {
+    grid-column: 1;
+    grid-row: 3;
+}
 
 #contact form button {
     grid-column: 2;
+    grid-row: 3;
     background: var(--blue);
     color: white;
     border: none;
