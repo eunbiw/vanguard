@@ -118,6 +118,7 @@ nav ul {
     opacity: 0.9;
 }
 #hero .container {
+    background: rgba(0,0,0,0.7);
     padding: 2rem;
     border-radius: 10px;
 }
@@ -148,6 +149,9 @@ h1::before {
     border-radius: 5px;
     text-decoration: none;
 }
+#results {
+    background: var(--blue);
+}
 .results-container {
     display: flex;
     flex-direction: column;
@@ -166,6 +170,7 @@ h1::before {
     background: var(--blue);
     padding: 1.5rem;
     border-radius: 10px;
+    color: var(--white);
 }
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
