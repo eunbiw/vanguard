@@ -207,10 +207,11 @@ section p {
 }
 
 #offer article {
-    min-height: 180px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    background: var(--blue) !important;
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
 }
 #offer h3 {
     font-size: 1.2rem;
@@ -262,7 +263,6 @@ textarea {
     color: black;
 }
 
-/* NO grid-row at all — let grid auto-place properly */
 input[name="fullname"],
 input[name="email"] {
     grid-column: 1;
@@ -276,10 +276,15 @@ input[name="industry"] {
 textarea[name="help"] {
     grid-column: 1;
 }
-
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--white);
+    font-size: 1rem;
+}
 button {
     grid-column: 2;
-    background: var(--blue);
+    background: var(--blue) !important;
     border: none;
     border-radius: 8px;
     padding: 12px;
