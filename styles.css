@@ -146,6 +146,15 @@ h1::before {
     border-radius: 5px;
     text-decoration: none;
 }
+.results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.results-table, .bar-chart {
+    width: 100%;
+}
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
