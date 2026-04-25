@@ -253,13 +253,13 @@ form {
     margin: 2rem auto;
 }
 
-input,
-textarea {
+form input,
+form textarea {
     width: 100%;
     box-sizing: border-box;
-    background: white;
-    border: 2px solid var(--blue);
     padding: 12px;
+    border: 2px solid var(--blue);
+    background: white;
     color: black;
 }
 
