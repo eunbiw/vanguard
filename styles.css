@@ -245,16 +245,15 @@ th, td {
 thead {
     background: #111;
 }
-form {
+#contact form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     max-width: 900px;
     margin: 2rem auto;
 }
-
-form input,
-form textarea {
+#contact form input,
+#contact form textarea {
     width: 100%;
     box-sizing: border-box;
     padding: 12px;
@@ -262,12 +261,6 @@ form textarea {
     background: white;
     color: black;
 }
-input[name="fullname"] { grid-column: 1; }
-input[name="company"]  { grid-column: 2; }
-input[name="email"]    { grid-column: 1; }
-input[name="industry"] { grid-column: 2; }
-textarea[name="help"]  { grid-column: 1; }
-button { grid-column: 2; }
 
 label {
     display: block;
@@ -279,11 +272,32 @@ label {
 form label {
     grid-column: auto;
 }
-button {
+#contact form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.85rem;
+    color: var(--white);
+}
+
+#contact form input[name="fullname"],
+#contact form input[name="email"] {
+    grid-column: 1;
+}
+
+#contact form input[name="company"],
+#contact form input[name="industry"] {
     grid-column: 2;
-    background: var(--blue) !important;
+}
+
+#contact form textarea[name="help"] {
+    grid-column: 1;
+}
+
+#contact form button {
+    grid-column: 2;
+    background: var(--blue);
+    color: white;
     border: none;
-    border-radius: 8px;
     padding: 12px;
     cursor: pointer;
 }
