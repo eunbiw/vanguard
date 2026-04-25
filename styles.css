@@ -264,6 +264,8 @@ thead {
     display: block;
     opacity: 0.8;
     text-align: left;
+    grid-column: auto !important;
+    grid-row: auto !important;
 }
 
 #contact input,
