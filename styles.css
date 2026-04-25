@@ -270,12 +270,15 @@ input[name="industry"] { grid-column: 2; }
 
 textarea[name="help"]  { grid-column: 1; }
 
-
 label {
     display: block;
-    margin-bottom: 5px;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+    text-align: left;
     color: var(--white);
-    font-size: 1rem;
+}
+form label {
+    grid-column: auto;
 }
 button {
     grid-column: 2;
