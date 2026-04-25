@@ -121,7 +121,9 @@ nav ul {
     padding: 2rem;
     border-radius: 10px;
 }
-
+section {
+    padding: 3rem 0;
+}
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
 h1 {
@@ -154,6 +156,16 @@ h1::before {
 
 .results-table, .bar-chart {
     width: 100%;
+}
+#offer .container {
+    display: grid;
+    gap: 1rem;
+}
+
+#offer article {
+    background: var(--blue);
+    padding: 1.5rem;
+    border-radius: 10px;
 }
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
@@ -205,19 +217,20 @@ h1::before {
 /* MEDIA QUERIES (MEDIUM) */ 
 @media (min-width: 800px) {
 
-    #results {
-        grid-template-columns: 1fr 1fr;
-    }
     .results-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+   
     .results-table {
         width: 50%;
     }
     .bar-chart {
         width: 50%;
+    }
+    #offer .container {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
@@ -225,5 +238,8 @@ h1::before {
 @media (min-width: 1024px) {
     nav ul {
         justify-content: flex-end;
+    }
+    #offer .container {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
