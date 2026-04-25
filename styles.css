@@ -186,33 +186,49 @@ h1::before {
 #offer article:hover {
     transform: translateY(-5px);
 }
+#contact {
+    background: var(--black);
+    color: var(--white);
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 form {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    max-width: 500px;
-    margin: auto;
+    background: white;
+    padding: 2rem;
+    border: 2px solid var(--blue);
 }
 
 input, textarea {
+    width: 100%;
     padding: 12px;
     border: 2px solid var(--blue);
-    background: var(--black);
-    color: var(--white);
-    border-radius: 5px;
+    border-radius: 0;
+    background: white;
+    color: black;
 }
 
 textarea {
+    grid-column: 1 / 2;
     min-height: 120px;
 }
 
 button {
+    grid-column: 2 / 3;
     background: var(--blue);
-    color: var(--white);
-    padding: 12px;
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 0;
+    padding: 12px;
     cursor: pointer;
 }
+
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
