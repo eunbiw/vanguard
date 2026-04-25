@@ -263,32 +263,28 @@ form textarea {
     color: black;
 }
 
+input[name="fullname"] { grid-column: 1; }
+input[name="company"]  { grid-column: 2; }
+input[name="email"]    { grid-column: 1; }
+input[name="industry"] { grid-column: 2; }
+
+textarea[name="help"]  { grid-column: 1; }
+
 label {
     display: block;
-    margin-bottom: 5px;
     font-size: 0.85rem;
+    margin-bottom: 4px;
+    text-align: left;
     color: var(--white);
 }
-
-input[name="fullname"],
-input[name="email"] {
-    grid-column: 1;
+form label {
+    grid-column: auto;
 }
-
-input[name="company"],
-input[name="industry"] {
-    grid-column: 2;
-}
-
-textarea[name="help"] {
-    grid-column: 1;
-}
-
 button {
     grid-column: 2;
-    background: var(--blue);
-    color: white;
+    background: var(--blue) !important;
     border: none;
+    border-radius: 8px;
     padding: 12px;
     cursor: pointer;
 }
