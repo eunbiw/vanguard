@@ -248,52 +248,37 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    max-width: 900px;
+    margin: 2rem auto;
 }
+
+form > * {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 input, textarea {
     background: white;
     border: 2px solid var(--blue);
-    border-radius: 0;
     padding: 12px;
     color: black;
-    width: 100%;
-    
 }
-textarea {
-    grid-column: 1 / 2;   
-}
+input[name="fullname"] { grid-column: 1; grid-row: 1; }
+input[name="company"]  { grid-column: 2; grid-row: 1; }
 
-button {
-    grid-column: 2 / 3;  
-}
-input[name="fullname"] {
-    grid-column: 1;
-    grid-row: 1;
-}
+input[name="email"]    { grid-column: 1; grid-row: 2; }
+input[name="industry"] { grid-column: 2; grid-row: 2; }
 
-input[name="company"] {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-textarea[name="help"] {
-    grid-column: 1;
-    grid-row: 3;
-}
-
-input[name="email"] {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-input[name="industry"] {
-    grid-column: 2;
-    grid-row: 2;
-}
+textarea[name="help"]  { grid-column: 1; grid-row: 3; }
 
 button {
     grid-column: 2;
     grid-row: 3;
-    align-self: stretch;
+    background: var(--blue);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
 }
 footer {
     background: var(--black);
