@@ -194,18 +194,18 @@ h1::before {
 }
 
 #contact .container {
-    display: flex;
-    align-items: center;
+    display: block;
+    
 }
 form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
     gap: 1rem;
 
     max-width: 900px;
     margin: 2rem auto;
 }
-
 input, textarea {
     background: white;
     border: 2px solid var(--blue);
@@ -216,24 +216,29 @@ input, textarea {
 }
 input[name="fullname"] {
     grid-column: 1;
+    grid-row: 1;
 }
 
 input[name="company"] {
     grid-column: 2;
+    grid-row: 1;
 }
 
 textarea[name="help"] {
     grid-column: 3;
-    min-height: 120px;
+    grid-row: 1;
 }
 
 input[name="email"] {
     grid-column: 1;
+    grid-row: 2;
 }
 
 input[name="industry"] {
     grid-column: 2;
+    grid-row: 2;
 }
+
 
 button {
     grid-column: 3;
