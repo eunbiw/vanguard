@@ -252,28 +252,33 @@ form {
     margin: 2rem auto;
 }
 
-form > * {
+input,
+textarea {
     width: 100%;
     box-sizing: border-box;
-}
-
-input, textarea {
     background: white;
     border: 2px solid var(--blue);
     padding: 12px;
     color: black;
 }
-input[name="fullname"] { grid-column: 1; grid-row: 1; }
-input[name="company"]  { grid-column: 2; grid-row: 1; }
 
-input[name="email"]    { grid-column: 1; grid-row: 2; }
-input[name="industry"] { grid-column: 2; grid-row: 2; }
+/* NO grid-row at all — let grid auto-place properly */
+input[name="fullname"],
+input[name="email"] {
+    grid-column: 1;
+}
 
-textarea[name="help"]  { grid-column: 1; grid-row: 3; }
+input[name="company"],
+input[name="industry"] {
+    grid-column: 2;
+}
+
+textarea[name="help"] {
+    grid-column: 1;
+}
 
 button {
     grid-column: 2;
-    grid-row: 3;
     background: var(--blue);
     color: white;
     border: none;
