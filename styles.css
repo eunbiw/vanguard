@@ -70,6 +70,11 @@ table {
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+header {
+    background: var(--black);
+    border-bottom: 2px solid var(--blue);
+    padding: 1rem 0;
+}
 .container {
     width: 90%;
     max-width: 1200px;
@@ -91,6 +96,15 @@ nav ul {
     gap: 1rem;
      flex-wrap: wrap;
 }
+nav a {
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 
@@ -106,7 +120,7 @@ nav ul {
     padding: 1rem;
 }
 #hero h2 {
-    font-size: 3.5rem;
+    font-size: 1.1rem;
 }
 
 #hero p {
