@@ -245,7 +245,9 @@ thead {
     background: #111;
 }
 form {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 input, textarea {
     background: white;
@@ -254,6 +256,14 @@ input, textarea {
     padding: 12px;
     color: black;
     width: 100%;
+    
+}
+textarea {
+    grid-column: 1 / 2;   
+}
+
+button {
+    grid-column: 2 / 3;  
 }
 input[name="fullname"] {
     grid-column: 1;
@@ -266,8 +276,8 @@ input[name="company"] {
 }
 
 textarea[name="help"] {
-    grid-column: 3;
-    grid-row: 1;
+    grid-column: 1;
+    grid-row: 3;
 }
 
 input[name="email"] {
