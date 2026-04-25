@@ -181,6 +181,33 @@ h1::before {
     border-radius: 10px;
     color: var(--white);
 }
+form {
+    display: grid;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 2px solid var(--blue);
+    background: var(--black);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+button {
+    background: var(--blue);
+    color: var(--white);
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
