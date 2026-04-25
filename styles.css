@@ -151,6 +151,7 @@ h1::before {
 }
 #results {
     background: var(--blue);
+    color: white;
 }
 .results-container {
     display: flex;
@@ -162,8 +163,9 @@ h1::before {
     width: 100%;
 }
 #expertise {
-    background: #f4f4f4;
-    color: black;
+    background: var(--white);
+    color: var(--black);
+    text-align: center;
 }
 
 #offer {
@@ -172,15 +174,19 @@ h1::before {
 }
 #offer .container {
     display: grid;
-    gap: 1rem;
+    gap: 1.5rem;
     grid-template-columns: 1fr;
 }
 
 #offer article {
     background: var(--blue);
-    padding: 1.5rem;
-    border-radius: 10px;
+    padding: 2rem;
+    border-radius: 12px;
     color: var(--white);
+    transition: transform 0.3s ease;
+}
+#offer article:hover {
+    transform: translateY(-5px);
 }
 form {
     display: grid;
