@@ -96,6 +96,7 @@ p {
 nav ul {
     display: flex;
     gap: 1rem;
+     flex-wrap: wrap;
 }
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
 #hero {
@@ -161,9 +162,19 @@ h1::before {
 .results-table, .bar-chart {
     width: 100%;
 }
+#expertise {
+    background: #f4f4f4;
+    color: black;
+}
+
+#offer {
+    background: #f4f4f4;
+    color: black;
+}
 #offer .container {
     display: grid;
     gap: 1rem;
+    grid-template-columns: 1fr;
 }
 
 #offer article {
