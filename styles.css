@@ -191,15 +191,15 @@ section p {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    align-items: center;
 }
-#results h2,
-#results p {
-    text-align: left;
-    margin-bottom: 1rem;
+.results-container h2,
+.results-container p {
+    width: 100%;
 }
 .results-table, .bar-chart {
     width: 100%;
+    display: inline-block;
+    vertical-align: top;
 }
 .results-table table {
     border: 1px solid #222;
