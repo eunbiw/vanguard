@@ -279,10 +279,15 @@ button.full {
 
 
 button {
+    grid-column: 2;
+    grid-row: 3;
     background: var(--blue);
     color: white;
     border: none;
     padding: 12px;
+    width: 140px;
+    justify-self: end;
+    align-self: end;
 }
 footer {
     background: var(--black);
