@@ -113,14 +113,15 @@ nav a:hover {
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
 #hero {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
-    height: 85vh;
+    height: 90vh;
     display: flex;
     place-items: center;
     text-align: center;
     padding: 1rem;
 }
 #hero h2 {
-    font-size: 1.1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 #hero p {
@@ -248,35 +249,25 @@ thead {
 #contact form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    gap: 1rem;
+    gap: 1.5rem;
     max-width: 900px;
     margin: 2rem auto;
 }
+#contact form div {
+    display: flex;
+    flex-direction: column;
+}
 
 #contact label {
-    font-size: 0.7rem;
-    margin-bottom: 4px;
-    display: block;
-    color: var(--white);
+    margin-bottom: 6px;
+    font-size: 0.8rem;
 }
 
-#contact input,
 #contact textarea {
-    width: 100%;
-    padding: 14px 12px;
-    border: 2px solid var(--blue);
-    background: white;
-    color: black;
+    min-height: 120px;
 }
 
-input[name="fullname"] { grid-column: 1; grid-row: 1; }
-input[name="company"]  { grid-column: 2; grid-row: 1; }
 
-input[name="email"]    { grid-column: 1; grid-row: 2; }
-input[name="industry"] { grid-column: 2; grid-row: 2; }
-
-textarea[name="help"]  { grid-column: 1; grid-row: 3; }
 
 button {
     grid-column: 2;
