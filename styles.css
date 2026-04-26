@@ -224,12 +224,13 @@ section p {
 #contact {
     background: var(--black);
     color: var(--white);
-    text-align: center;
+    text-align: left;
     padding: 5rem 0;
 }
 
 #contact .container {
     display: block;
+    
     
 }
 table {
