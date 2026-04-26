@@ -131,18 +131,32 @@
             <h2>Contact Us</h2>
             <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
             <form>
-                <label>Full Name</label> 
-                <input type="text" name="fullname">
-                <label>Company</label>
-                <input type="text" name="company" >
-                <label>How can we help you?</label>
-                <textarea name="help"></textarea>
-                <label>Email address</label>
-                <input type="email" name="email" >
-                <label>Industry</label>
-                <input type="text" name="industry">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" name="fullname">
+                </div>
 
-                <button type="submit">Submit</button>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label>Company Name</label>
+                    <input type="text" name="company">
+                </div>
+
+                <div class="form-group">
+                    <label>Industry</label>
+                    <input type="text" name="industry">
+                </div>
+
+                <div class="form-group full">
+                    <label>How can we help you?</label>
+                    <textarea name="help"></textarea>
+                </div>
+
+                <button type="submit" style="grid-column: span 2;">Submit</button>
             </form>
         </div>
     </section>
