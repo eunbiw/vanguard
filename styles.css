@@ -249,16 +249,12 @@ thead {
 #contact form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "name company"
-        "email industry"
-        "help submit";
     gap: 1.5rem;
     max-width: 900px;
     margin: 2rem auto;
     text-align: left;
+    align-items: start;
 }
-
 .form-group {
     display: flex;
     flex-direction: column;
@@ -272,23 +268,20 @@ thead {
     font-size: 0.8rem;
 }
 textarea[name="help"] {
-    width: 100%;
     min-height: 120px;
+    width: 100%;
+    grid-column: 1 / 2;
 }
 .form-group:nth-child(1) { grid-area: name; }
 .form-group:nth-child(2) { grid-area: company; }
 .form-group:nth-child(3) { grid-area: email; }
 .form-group:nth-child(4) { grid-area: industry; }
 .form-group:nth-child(5) { grid-area: help; }
-
-button {
-    width: 140px;
+#contact button {
+    grid-column: 2;
     justify-self: end;
-    align-self: end;
-    background: var(--blue);
-    color: white;
-    border: none;
-    padding: 12px;
+    width: 120px;
+    height: 40px;
 }
 footer {
     background: var(--black);
