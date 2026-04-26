@@ -368,26 +368,23 @@ footer {
 
 /* MEDIA QUERIES (MEDIUM) */ 
 @media (min-width: 800px) {
+
     .results-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "text text"
-            "table chart";
-        gap: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
-
-    .text-content {
-        grid-area: text;
-    }
-
+   
     .results-table {
-        grid-area: table;
+        width: 50%;
+    }
+    .bar-chart {
+        width: 50%;
+    }
+    #offer .container {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .bar-chart {
-        grid-area: chart;
-    }
 }
 /* MEDIA QUERIES (LARGE) */
 @media (min-width: 1024px) {
