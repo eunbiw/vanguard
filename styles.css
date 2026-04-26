@@ -242,7 +242,7 @@ section p {
     background: var(--black);
     color: var(--white);
     text-align: left;
-    padding: 5rem 0;
+    padding: 5rem 2rem;
 }
 
 #contact .container {
@@ -289,7 +289,7 @@ thead {
     background: #ffffff;
     color: #000;
     border: 2.5px solid var(--blue);
-    border-radius: 6px;
+    
 }
 textarea {
     width: 100%;
