@@ -194,7 +194,12 @@ section p {
     align-items: flex-start;
 }
 
-
+#results h2,
+#results p {
+    text-align: left;
+    max-width: 700px;
+    margin-left: 0;
+}
 .results-table,
 .bar-chart {
     flex: 1;
