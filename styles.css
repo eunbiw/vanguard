@@ -293,6 +293,8 @@ textarea {
     color: #000;
     border: 2px solid var(--blue);
     border-radius: 4px;
+    min-height: 120px;
+    resize: vertical;
 }
 #contact button {
     grid-area: submit;
