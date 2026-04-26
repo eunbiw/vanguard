@@ -253,9 +253,18 @@ thead {
     max-width: 900px;
     margin: 2rem auto;
 }
-#contact form div {
+
+.form-group {
     display: flex;
     flex-direction: column;
+}
+
+.form-group.full {
+    grid-column: span 2;
+}
+
+button.full {
+    grid-column: span 2;
 }
 
 #contact label {
@@ -268,10 +277,7 @@ thead {
 }
 
 
-
 button {
-    grid-column: 2;
-    grid-row: 3;
     background: var(--blue);
     color: white;
     border: none;
