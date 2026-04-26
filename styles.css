@@ -255,29 +255,34 @@ thead {
         "email industry"
         "help help"
         "submit submit";
-    gap: 1rem 1.5rem;
+    gap: 1.2rem 2rem;
     max-width: 900px;
     margin: 2rem auto;
     text-align: left;
+    align-items: start;
 }
 .form-group:nth-child(1) { grid-area: name; }
 .form-group:nth-child(2) { grid-area: company; }
 .form-group:nth-child(3) { grid-area: email; }
 .form-group:nth-child(4) { grid-area: industry; }
-
-textarea[name="help"] {
-    grid-area: help;
+.form-group input,
+.form-group select,
+textarea {
     width: 100%;
-    min-height: 120px;
+    padding: 10px;
+    background: #111;
+    border: 1px solid #333;
+    color: white;
 }
 #contact button {
     grid-area: submit;
     justify-self: start;
     width: 140px;
-    height: 40px;
+    height: 42px;
     background: var(--blue);
     color: white;
     border: none;
+    cursor: pointer;
 }
 footer {
     background: var(--black);
