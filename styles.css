@@ -73,7 +73,7 @@ table {
 header {
     background: var(--black);
     border-bottom: 2px solid var(--blue);
-    padding: 1rem 0;
+    padding: 0.75rem 0;
 }
 .container {
     width: 90%;
@@ -85,6 +85,7 @@ header .container {
     justify-content: space-between;
     align-items: center;
 }
+
 h1, h2, h3 {
     margin-bottom: 1rem;
 }
@@ -131,19 +132,23 @@ nav a:hover {
 
 }
 #hero .container {
-    background: rgba(0,0,0,0.7);
-    padding: 2rem;
-    border-radius: 10px;
+    background: rgba(0,0,0,0.65);
+    padding: 3rem 2rem;
+    border-radius: 6px; 
+    max-width: 800px;
 }
 section {
-    padding: 6rem 0;
+    padding: 4rem 0;
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
 h1 {
     position: relative;
     padding-left: 60px;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
+
 h1::before {
     content: "";
     position: absolute;
@@ -157,8 +162,17 @@ h1::before {
 }
 .btn {
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    padding: 12px 22px;
+    background: var(--blue);
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
     font-weight: 600;
+}
+
+.btn:hover {
+    background: #005fcc;
 }
 h2 {
     font-size: 2rem;
@@ -177,6 +191,7 @@ section p {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
 }
 #results h2,
 #results p {
@@ -186,12 +201,18 @@ section p {
 .results-table, .bar-chart {
     width: 100%;
 }
+.results-table table {
+    border: 1px solid #222;
+}
 #expertise {
     background: var(--white);
     color: var(--black);
-    text-align: center;
+    text-align: left;
 }
 
+#expertise p {
+    margin-left: 0;
+}
 #offer {
     background: var(--white);
     color: var(--black);
@@ -219,7 +240,7 @@ section p {
     color: var(--white) !important;
 }
 #offer article:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
 }
 #contact {
     background: var(--black);
@@ -268,21 +289,17 @@ thead {
 .form-group input,
 .form-group select,
 textarea {
-    width: 100%;
-    padding: 10px;
-    background: #111;
-    border: 1px solid #333;
-    color: white;
+    background: #eaeaea;
+    color: #000;
+    border: none;
 }
 #contact button {
     grid-area: submit;
-    justify-self: start;
-    width: 140px;
-    height: 42px;
+    width: 100%;
+    height: 50px;
     background: var(--blue);
-    color: white;
-    border: none;
-    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
 }
 footer {
     background: var(--black);
