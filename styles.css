@@ -199,7 +199,7 @@ section p {
 }
 #offer .container {
     display: grid;
-    
+    background-color: var(--white);
     grid-template-columns: 1fr;
 }
 
@@ -215,7 +215,10 @@ section p {
     border-radius: 12px;
     transition: transform 0.3s ease;
 }
-#offer article h3,
+#offer article h3 {
+    color: var(--white);
+    
+}
 #offer article p {
     color: var(--white) !important;
 }
