@@ -249,6 +249,7 @@ thead {
 #contact form {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
     gap: 1.5rem;
     max-width: 900px;
     margin: 2rem auto;
@@ -281,10 +282,19 @@ thead {
     grid-column: 1;
     grid-row: 3;
 }
-
-button {
+.submit-btn {
     grid-column: 2;
     grid-row: 3;
+    width: 140px;
+    justify-self: end;
+    align-self: end;
+    background: var(--blue);
+    color: white;
+    border: none;
+    padding: 12px;
+}
+button {
+    
     background: var(--blue);
     color: white;
     border: none;
