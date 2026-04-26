@@ -365,25 +365,20 @@ footer {
 /* MEDIA QUERIES (MEDIUM) */ 
 @media (min-width: 800px) {
 
-    .results-container {
+    .results-content {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        gap: 2rem;
+        align-items: flex-start;
     }
-    .results-container h2,
-    .results-container p {
-        width: 100%;
-    }
-    .results-table {
-        width: 50%;
-    }
+
+    .results-table,
     .bar-chart {
-        width: 50%;
+        flex: 1;
     }
+
     #offer .container {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 /* MEDIA QUERIES (LARGE) */
 @media (min-width: 1024px) {
