@@ -224,7 +224,7 @@ section p {
 #contact {
     background: var(--black);
     color: var(--white);
-    text-align: center;
+    text-align: left;
     padding: 5rem 0;
 }
 
@@ -250,34 +250,28 @@ thead {
 #contact form {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "name company"
+        "email industry"
+        "help help"
+        "submit submit";
     gap: 1rem 1.5rem;
     max-width: 900px;
     margin: 2rem auto;
     text-align: left;
 }
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-
-#contact label {
-    margin-bottom: 6px;
-    font-size: 0.8rem;
-}
-textarea[name="help"] {
-    grid-column: 1 / -1;
-    min-height: 120px;
-}
 .form-group:nth-child(1) { grid-area: name; }
 .form-group:nth-child(2) { grid-area: company; }
 .form-group:nth-child(3) { grid-area: email; }
 .form-group:nth-child(4) { grid-area: industry; }
-.form-group:nth-child(5) { grid-area: help; }
+
+textarea[name="help"] {
+    grid-area: help;
+    width: 100%;
+    min-height: 120px;
+}
 #contact button {
-    grid-column: 1 / -1;
+    grid-area: submit;
     justify-self: start;
     width: 140px;
     height: 40px;
