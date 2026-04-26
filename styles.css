@@ -131,7 +131,7 @@ nav a:hover {
 
 }
 #hero .container {
-    background: rgba(0, 0, 0, 0.75);
+    background: var(--charcoal);
     padding: 1.25rem 1.5rem;
     border-radius: 10px;
     max-width: 600px;
