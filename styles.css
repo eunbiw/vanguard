@@ -251,7 +251,11 @@ section p {
     text-align: left;
     padding: 5rem 2rem;
 }
-
+#contact p {
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    text-align: left;
+}
 #contact .container {
     display: block;
     text-align: left;
