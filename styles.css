@@ -289,9 +289,13 @@ thead {
 .form-group input,
 .form-group select,
 textarea {
-    background: #eaeaea;
-    color: #000;
-    border: none;
+    width: 100%;
+    padding: 12px;
+    background: #ffffff;          
+    color: #000;                 
+    border: 2px solid var(--blue); 
+    border-radius: 4px;
+    outline: none;
 }
 #contact button {
     grid-area: submit;
