@@ -260,13 +260,8 @@ thead {
     flex-direction: column;
 }
 
-.form-group.full {
-    grid-column: span 2;
-}
 
-button.full {
-    grid-column: span 2;
-}
+
 
 #contact label {
     margin-bottom: 6px;
