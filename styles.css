@@ -188,10 +188,17 @@ section p {
     color: white;
     padding: 4rem 0;
 }
+.results-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
 
 .results-table,
 .bar-chart {
     margin-top: 2rem;
+    flex: 1;
 }
 #expertise {
     background: var(--white);
