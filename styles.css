@@ -131,7 +131,7 @@ nav a:hover {
 
 }
 #hero .container {
-    background: var(--charcoal);
+    background: var(--black);
     padding: 1.25rem 1.5rem;
     border-radius: 10px;
     max-width: 600px;
@@ -211,8 +211,8 @@ section p {
 }
 #offer .container {
     display: grid;
-    background-color: var(--white);
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
 }
 
 #offer h2 {
