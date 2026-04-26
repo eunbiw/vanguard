@@ -196,11 +196,7 @@ section p {
 .results-container p {
     width: 100%;
 }
-.results-table, .bar-chart {
-    width: 100%;
-    display: inline-block;
-    vertical-align: top;
-}
+
 .results-table table {
     border: 1px solid #222;
 }
@@ -374,7 +370,10 @@ footer {
         flex-direction: row;
         justify-content: space-between;
     }
-   
+    .results-container h2,
+    .results-container p {
+        width: 100%;
+    }
     .results-table {
         width: 50%;
     }
