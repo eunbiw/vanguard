@@ -289,8 +289,6 @@ thead {
 .form-group input,
 .form-group select,
 textarea {
-    width: 100%;
-    padding: 12px;
     background: #ffffff;          
     color: #000;                 
     border: 2px solid var(--blue); 
