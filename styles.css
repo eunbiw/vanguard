@@ -186,19 +186,12 @@ section p {
 #results {
     background: var(--blue);
     color: white;
-}
-.results-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-.results-container h2,
-.results-container p {
-    width: 100%;
+    padding: 4rem 0;
 }
 
-.results-table table {
-    border: 1px solid #222;
+.results-table,
+.bar-chart {
+    margin-top: 2rem;
 }
 #expertise {
     background: var(--white);
